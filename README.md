@@ -1,12 +1,8 @@
-# Advanced Angular
+# Advanced Angular 2022 (v14)
 
 This project showcases some advanced angular concepts.
 It's used as the driver for Advanced Angular Training sessions.
 
-
-## Makefile
-
-Everything you need to be up and running is contained in the Makefile, unless you're on Windows but we're working on it.
 
 ## Setup
 
@@ -26,7 +22,3 @@ Run `npm run app:build` to build the application that will be put into `app-buil
 
 ## Json server
 Run `npm run app:server` to start the json server. The db is in the `server` folder.
-
-# Angular Universal
-Run `npm run app:universal:build` to build the app for Angular Universal. Then you can run the server with `npm run app:universal:serve`.
-
