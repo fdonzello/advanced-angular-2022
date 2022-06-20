@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Advanced Angular 2022</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" routerLink="/">Home</a>
+        <!-- <a class="nav-link" routerLink="/news">News</a> -->
+        <a class="nav-link" routerLink="/login" *ngIf="!(isLoggedIn$ | async)">Login</a>
+        <a class="nav-link" href="javascript: void(0);" (click)="logout()" *ngIf="(isLoggedIn$ | async)">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+
+
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="mb-2" src="/assets/fraway.png" alt="" width="24" height="24">
+      <small class="d-block mb-3 text-muted">&copy; 2022</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" target="_blank" href="https://circleci.com/">CircleCI</a></li>
+        <li><a class="text-muted" target="_blank" href="https://karma-runner.github.io/latest/index.html">Karma</a></li>
+        <li><a class="text-muted" target="_blank" href="https://www.cypress.io/">Cypress</a></li>
+        <li><a class="text-muted" target="_blank" href="https://ngrx.io/">Redux with NGRX</a></li>
+        <li><a class="text-muted" target="_blank"
+            href="https://angular.io/guide/service-worker-getting-started">Offline</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" target="_blank" href="https://github.com/fdonzello/advanced-angular">Github</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" target="_blank"
+            href="https://www.linkedin.com/in/francesco-donzello-3384aa42/">Francesco Donzello -
+            Trainer</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
